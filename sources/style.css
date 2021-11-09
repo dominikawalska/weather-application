@@ -1,0 +1,117 @@
+form {
+  margin: 10px 10px 30px 0;
+  border: #a5bdfd;
+}
+a {
+  color: #5a6275;
+}
+
+.weather-app {
+  border: 3px solid #a5bdfd;
+  border-radius: 5px;
+  margin: 100px auto;
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  color: #5a6275;
+  box-shadow: 1px 1px 10px #b7b7b7;
+  max-width: 800px;
+}
+
+.default-city-1 {
+  padding-right: 10px;
+}
+
+.default-city-3 {
+  padding-left: 10px;
+}
+
+.search-button {
+  font-size: 20px;
+  background-color: #1eb2a6;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  box-shadow: 1px 1px 10px #b7b7b7;
+  transition: all 200ms ease-in-out;
+}
+.my-location-button {
+  background-color: #ffa34d;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  box-shadow: 1px 1px 10px #b7b7b7;
+  transition: all 200ms ease-in-out;
+}
+
+.main-window {
+  border: 1px solid #a5bdfd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  /* box-shadow: 1px 1px 10px #b7b7b7; */
+}
+
+.main-weather {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.main-weather-icon {
+  color: black;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.main-weather-temperature {
+  font-size: 50px;
+}
+
+.units {
+  position: relative;
+  top: -25px;
+}
+.wind-hum-pre {
+  font-size: 20px;
+  text-align: right;
+  padding-top: 30px;
+}
+
+.next-days {
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  border-right: 3px solid #a5bdfd;
+}
+
+.next-days:last-child {
+  border: none;
+}
+
+.icons {
+  font-size: 30px;
+  color: black;
+}
+
+.temperature {
+  font-size: 40;
+}
+
+.icons {
+  padding: 10px;
+}
+
+.search-button:hover {
+  background-color: rgb(30, 178, 166, 70%);
+}
+.my-location-button:hover {
+  background-color: rgb(255, 163, 77, 70%);
+}
+
+#celsius {
+  font-size: 15px;
+}
+
+#fahrenheit {
+  font-size: 15px;
+}
