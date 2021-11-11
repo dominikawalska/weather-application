@@ -28,76 +28,87 @@
   <body>
     <div class="conteiner">
       <div class="weather-app">
-        <div class="default-cities">
-          <span class="default-city-1">Gdynia</span>
-          <span class="default-city-2">Sopot</span>
-          <span class="default-city-3">Warszawa</span>
-        </div>
-        <form id="city-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type in city"
-                class="form-control shadow-sm"
-                autofocus="on"
-                id="city-input"
-              />
-            </div>
-            <div class="col-2">
-              <input type="submit" value="Search" class="search-button" />
-            </div>
-            <div class="col-4">
-              <button class="my-location-button">My location</button>
-            </div>
+        <div class="weather-frame">
+          <div class="default-cities">
+            <span class="default-city-1">Gdynia</span>
+            <span class="default-city-2">Sopot</span>
+            <span class="default-city-3">Warszawa</span>
           </div>
-        </form>
-        <div class="main-window">
-          <div class="row">
-            <div class="col">
-              <h1 id="main-city"></h1>
-              <h2>Sunday, 15:30</h2>
-              <h3 id="description"></h3>
+          <form id="city-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type in city"
+                  class="form-control shadow-sm"
+                  autofocus="on"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-2">
+                <input type="submit" value="Search" class="search-button" />
+              </div>
+              <div class="col-4">
+                <button class="my-location-button">My location</button>
+              </div>
             </div>
+          </form>
+          <div class="main-window">
+            <div class="row">
+              <div class="col">
+                <h1 id="main-city"></h1>
+                <h3>Sunday, 15:30</h3>
+                <h4 id="description"></h4>
+              </div>
 
-            <div class="col main-weather">
-              <i class="fas fa-sun main-weather-icon"></i>
+              <div class="col main-weather">
+                <i class="fas fa-sun main-weather-icon"></i>
 
-              <span class="main-weather-temperature"></span>
-              <span class="units"
-                ><a href="#" id="celsius">°C</a> |
-                <a href="#" id="fahrenheit">°F</a>
-              </span>
+                <span class="main-weather-temperature"></span>
+                <span class="units"
+                  ><a href="#" id="celsius">°C</a> |
+                  <a href="#" id="fahrenheit">°F</a>
+                </span>
+              </div>
+              <div class="col wind-hum">
+                <div class="wind">Wind: km/h</div>
+                <div class="humidity">Humidity: %</div>
+              </div>
             </div>
-            <div class="col wind-hum-pre">
-              <div class="wind">Wind: km/h</div>
-              <div class="humidity">Humidity: %</div>
+          </div>
+          <div class="">
+            <div class="row">
+              <div class="col-3 next-days">
+                <div class="day">Mon</div>
+                <i class="fas fa-cloud icons"></i>
+                <div class="temperature">15°C</div>
+              </div>
+              <div class="col-3 next-days">
+                <div class="day">Tue</div>
+                <i class="fas fa-cloud-showers-heavy icons"></i>
+                <div class="temperature">10°C</div>
+              </div>
+              <div class="col-3 next-days">
+                <div class="day">Wed</div>
+                <i class="fas fa-cloud-sun-rain icons"></i>
+                <div class="temperature">14°C</div>
+              </div>
+              <div class="col-3 next-days">
+                <div class="day">Thu</div>
+                <i class="fas fa-cloud-sun icons"></i>
+                <div class="temperature">17°C</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="">
-          <div class="row">
-            <div class="col-3 next-days">
-              <div class="day">Mon</div>
-              <i class="fas fa-cloud icons"></i>
-              <div class="temperature">15°C</div>
-            </div>
-            <div class="col-3 next-days">
-              <div class="day">Tue</div>
-              <i class="fas fa-cloud-showers-heavy icons"></i>
-              <div class="temperature">10°C</div>
-            </div>
-            <div class="col-3 next-days">
-              <div class="day">Wed</div>
-              <i class="fas fa-cloud-sun-rain icons"></i>
-              <div class="temperature">14°C</div>
-            </div>
-            <div class="col-3 next-days">
-              <div class="day">Thu</div>
-              <i class="fas fa-cloud-sun icons"></i>
-              <div class="temperature">17°C</div>
-            </div>
-          </div>
+        <div class="github-link">
+          <a
+            href="https://github.com/dominikawalska/weather-application"
+            target="_blank"
+          >
+            Open-source code</a
+          >
+          by Dominika Walska
         </div>
       </div>
     </div>
