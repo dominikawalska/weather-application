@@ -10,12 +10,10 @@ function currentDate(date) {
     "Sunday",
   ];
   let day = days[date.getDay()];
-
   let hour = date.getHours();
   if (hour < 10) {
     hour = `0${hour}`;
   }
-
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -28,19 +26,26 @@ document.querySelector("#date").innerHTML = currentDate(now);
 
 // Get temperature, wind, humidity and description
 function displayWeatherCondition(response) {
-  document.querySelector("#main-city").innerHTML = response.data.name;
-  let temperature = Math.round(response.data.main.temp);
-  document.querySelector(".main-weather-temperature").innerHTML = temperature;
+  let cityElement = document.querySelector("#main-city");
+  let temperatureElement = document.querySelector(".main-weather-temperature");
+  let humidityElement = document.querySelector(".humidity");
+  let windElement = document.querySelector(".wind");
+  let descriptionElement = document.querySelector("#description");
+  let iconElement = document.querySelector("#icon");
+  let icon = response.data.weather[0].icon;
 
-  let humidityInput = Math.round(response.data.main.humidity);
-  document.querySelector(".humidity").innerHTML = `Humidity: ${humidityInput}%`;
-
-  let windInput = Math.round(response.data.wind.speed);
-  document.querySelector(".wind").innerHTML = `Wind: ${windInput}km/h`;
-
-  let descriptionInput = response.data.weather[0].main;
-  document.querySelector("#description").innerHTML = descriptionInput;
+  cityElement.innerHTML = response.data.name;
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  humidityElement.innerHTML = Math.round(response.data.main.humidity);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  descriptionElement.innerHTML = response.data.weather[0].main;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].main);
 }
+
 // default city
 function search(city) {
   let units = "metric";
