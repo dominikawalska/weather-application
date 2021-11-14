@@ -2,9 +2,15 @@ form {
   margin: 10px 10px 30px 0;
   border: #a5bdfd;
 }
+
 a {
   color: #a5bdfd;
   text-decoration: none;
+}
+
+img {
+  position: relative;
+  top: -15px;
 }
 
 .weather-app {
@@ -105,14 +111,15 @@ a {
 .icons {
   font-size: 30px;
   color: black;
-}
-
-.temperature {
-  font-size: 40;
-}
-
-.icons {
   padding: 10px;
+}
+
+/* .temperature { */
+/* font-size: 40; */
+/* } */
+
+.github-link {
+  margin-top: 50px;
 }
 
 .search-button:hover {
@@ -126,8 +133,4 @@ a {
 .active:hover {
   color: #5a6275;
   text-decoration: none;
-}
-
-.github-link {
-  margin-top: 50px;
 }
