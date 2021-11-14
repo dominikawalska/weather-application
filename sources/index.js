@@ -1,5 +1,3 @@
-// Get date
-
 function currentDate(date) {
   let days = [
     "Sunday",
@@ -26,8 +24,7 @@ function currentDate(date) {
 }
 
 let now = new Date();
-let h3 = document.querySelector("h3");
-h3.innerHTML = currentDate(now);
+document.querySelector("#date").innerHTML = currentDate(now);
 
 // Get temperature, wind, humidity and description
 function displayWeatherCondition(response) {

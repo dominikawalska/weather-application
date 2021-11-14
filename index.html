@@ -29,11 +29,13 @@
     <div class="conteiner">
       <div class="weather-app">
         <div class="weather-frame">
+
           <div class="default-cities">
             <span class="default-city-1">Gdynia</span>
             <span class="default-city-2">Sopot</span>
             <span class="default-city-3">Warszawa</span>
           </div>
+
           <form id="city-form">
             <div class="row">
               <div class="col-6">
@@ -52,30 +54,32 @@
                 <button class="my-location-button">My location</button>
               </div>
             </div>
+
           </form>
           <div class="main-window">
             <div class="row">
               <div class="col">
                 <h1 id="main-city"></h1>
-                <h3>Sunday, 15:30</h3>
+                <h3 id="date"></h3>
                 <h4 id="description"></h4>
               </div>
 
               <div class="col main-weather">
-                <i class="fas fa-sun main-weather-icon"></i>
-
+                <img class="main-weather-icon"></img>
                 <span class="main-weather-temperature"></span>
                 <span class="units"
                   ><a href="#" id="celsius">°C</a> |
                   <a href="#" id="fahrenheit">°F</a>
                 </span>
               </div>
+
               <div class="col wind-hum">
-                <div class="wind">Wind: km/h</div>
-                <div class="humidity">Humidity: %</div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
               </div>
             </div>
           </div>
+
           <div class="">
             <div class="row">
               <div class="col-3 next-days">
@@ -101,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="github-link">
+        <small class="github-link">
           <a
             href="https://github.com/dominikawalska/weather-application"
             target="_blank"
@@ -109,7 +113,7 @@
             Open-source code</a
           >
           by Dominika Walska
-        </div>
+        </small>
       </div>
     </div>
 
