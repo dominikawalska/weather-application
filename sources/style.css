@@ -4,6 +4,7 @@ form {
 }
 a {
   color: #a5bdfd;
+  text-decoration: none;
 }
 
 .weather-app {
@@ -31,7 +32,7 @@ a {
 .search-button {
   font-size: 20px;
   color: #5a6275;
-  background-color: #1eb2a6;
+  background-color: #a5bdfd;
   border: none;
   border-radius: 10px;
   padding: 5px 20px;
@@ -39,9 +40,9 @@ a {
   transition: all 200ms ease-in-out;
 }
 .my-location-button {
-  background-color: #ffa34d;
+  background-color: #5a6275;
   font-size: 20px;
-  color: #5a6275;
+  color: #fff;
   border: none;
   border-radius: 10px;
   padding: 5px 20px;
@@ -72,11 +73,18 @@ a {
   font-size: 50px;
 }
 
-.units {
+.main-weather .units {
   position: relative;
   top: -25px;
   font-size: 15px;
 }
+
+.active {
+  color: #5a6275;
+  font-weight: 600;
+  cursor: default;
+}
+
 .wind-hum {
   font-size: 20px;
   text-align: right;
@@ -108,10 +116,16 @@ a {
 }
 
 .search-button:hover {
-  background-color: rgb(30, 178, 166, 70%);
+  background-color: rgba(165, 189, 253, 0.7);
+  color: #5a6275;
 }
 .my-location-button:hover {
-  background-color: rgb(255, 163, 77, 70%);
+  background-color: rgb(90, 98, 117, 70%);
+}
+
+.active:hover {
+  color: #5a6275;
+  text-decoration: none;
 }
 
 .github-link {
