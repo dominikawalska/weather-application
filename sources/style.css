@@ -30,6 +30,7 @@ a {
 
 .search-button {
   font-size: 20px;
+  color: #5a6275;
   background-color: #1eb2a6;
   border: none;
   border-radius: 10px;
@@ -40,6 +41,7 @@ a {
 .my-location-button {
   background-color: #ffa34d;
   font-size: 20px;
+  color: #5a6275;
   border: none;
   border-radius: 10px;
   padding: 5px 20px;
