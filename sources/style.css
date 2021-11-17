@@ -98,9 +98,9 @@ a {
   text-align: center;
   color: #5a6275;
 }
-/* .next-days { */
-/* border-right: 2px solid #a5bdfd; */
-/* } */
+.next-days {
+  border-right: 2px solid #a5bdfd;
+}
 
 .forecast-day {
   font-size: 18px;
@@ -113,9 +113,8 @@ a {
   opacity: 0.6;
 }
 
-.next-days:last-child {
-  border: none;
-}
+/* .next-days:last-child { */
+/* border: none; */
 
 .github-link {
   margin-top: 50px;

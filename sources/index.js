@@ -22,6 +22,32 @@ function currentDate(timestamp) {
   return `${day}, ${hour}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tue"];
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2 next-days">
+      <div class="forecast-day">${day}</div>
+      <img 
+      src="https://openweathermap.org/img/wn/04n@2x.png"
+      alt="Rain"
+      width="42"> </img> 
+      <div class="forecast-temperatures">
+        <span class="forecast-temperature-max">15°C</span>
+        <span class="forecast-temperature-min">10°C</span>
+      </div>
+    </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeatherCondition(response) {
   let cityElement = document.querySelector("#main-city");
   let dateElement = document.querySelector("#date");
@@ -45,6 +71,8 @@ function displayWeatherCondition(response) {
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -105,3 +133,4 @@ let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", changeToFahrenheit);
 
 search("Warszawa");
+displayForecast();
