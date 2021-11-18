@@ -33,14 +33,14 @@ function formatForecastDay(timestamp) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastDays = response.data.daily;
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="row row-cols-5">`;
 
   forecastDays.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
-    <div class="col-2 next-days">
+    <div class="next-days">
       <div class="forecast-day">${formatForecastDay(forecastDay.dt)}</div>
       <img 
       src="https://openweathermap.org/img/wn/${
