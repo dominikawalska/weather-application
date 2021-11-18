@@ -113,8 +113,9 @@ a {
   opacity: 0.6;
 }
 
-/* .next-days:last-child { */
-/* border: none; */
+.next-days:last-child {
+  border: none;
+}
 
 .github-link {
   margin-top: 50px;
