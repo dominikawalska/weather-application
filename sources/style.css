@@ -82,12 +82,6 @@ body {
   font-size: 15px;
 }
 
-.active {
-  color: #5a6275;
-  font-weight: 600;
-  cursor: default;
-}
-
 .wind-hum {
   font-size: 20px;
   text-align: right;
@@ -99,6 +93,7 @@ body {
   text-align: center;
   color: #5a6275;
 }
+
 .next-days {
   border-right: 1px solid #84a2f3;
 }
@@ -106,6 +101,7 @@ body {
 .forecast-day {
   font-size: 18px;
 }
+
 .forecast-temperatures {
   font-size: 13px;
 }
@@ -124,9 +120,4 @@ body {
 }
 .my-location-button:hover {
   background-color: rgb(90, 98, 117, 70%);
-}
-
-.active:hover {
-  color: #5a6275;
-  text-decoration: none;
 }

@@ -125,22 +125,6 @@ function getPosition(event) {
   navigator.geolocation.getCurrentPosition(handleCurrentPosition);
 }
 
-function changeToCelcius(event) {
-  event.preventDefault();
-  let celsiusElement = document.querySelector(".main-weather-temperature");
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  celsiusElement.innerHTML = Math.round(celsiusTemperatue);
-}
-
-function changeToFahrenheit(event) {
-  event.preventDefault();
-  let fahrenheitElement = document.querySelector(".main-weather-temperature");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  fahrenheitElement.innerHTML = Math.round((9 / 5) * celsiusTemperatue + 32);
-}
-
 let celsiusTemperatue = null;
 
 let form = document.querySelector("#city-form");
@@ -148,11 +132,5 @@ form.addEventListener("submit", showCity);
 
 let locationButton = document.querySelector(".my-location-button");
 locationButton.addEventListener("click", getPosition);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", changeToCelcius);
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", changeToFahrenheit);
 
 search("Warszawa");
