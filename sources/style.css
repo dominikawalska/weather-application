@@ -1,11 +1,15 @@
 form {
   margin: 10px 10px 30px 0;
-  border: #a5bdfd;
+  border: #84a2f3;
 }
 
 a {
-  color: #a5bdfd;
+  color: #84a2f3;
   text-decoration: none;
+}
+
+body {
+  background-color: rgb(165, 189, 253, 0.2);
 }
 
 .weather-app {
@@ -16,30 +20,28 @@ a {
 }
 
 .weather-frame {
-  border: 2px solid #a5bdfd;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 10px;
   padding: 30px;
-  box-shadow: 1px 1px 10px #b7b7b7;
+  margin-bottom: 15px;
 }
 
-.default-city-1 {
-  padding-right: 10px;
-}
-
-.default-city-3 {
-  padding-left: 10px;
+.input:defined {
+  background-color: rgb(165, 189, 253, 0.3);
+  border: none;
 }
 
 .search-button {
   font-size: 20px;
   color: #5a6275;
-  background-color: #a5bdfd;
+  background-color: #84a2f3;
   border: none;
   border-radius: 10px;
   padding: 5px 20px;
   box-shadow: 1px 1px 10px #b7b7b7;
   transition: all 200ms ease-in-out;
 }
+
 .my-location-button {
   background-color: #5a6275;
   font-size: 20px;
@@ -52,11 +54,10 @@ a {
 }
 
 .main-window {
-  border: 1px solid #a5bdfd;
-  border-radius: 5px;
+  border: 1px solid #84a2f3;
+  border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
-  /* box-shadow: 1px 1px 10px #b7b7b7; */
 }
 
 .main-weather {
@@ -99,7 +100,7 @@ a {
   color: #5a6275;
 }
 .next-days {
-  border-right: 2px solid #a5bdfd;
+  border-right: 1px solid #84a2f3;
 }
 
 .forecast-day {
@@ -115,10 +116,6 @@ a {
 
 .next-days:last-child {
   border: none;
-}
-
-.github-link {
-  margin-top: 50px;
 }
 
 .search-button:hover {

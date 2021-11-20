@@ -30,32 +30,26 @@
       <div class="weather-app">
         <div class="weather-frame">
 
-          <div class="default-cities">
-            <span class="default-city-1">Gdynia</span>
-            <span class="default-city-2">Sopot</span>
-            <span class="default-city-3">Warszawa</span>
-          </div>
-
           <form id="city-form">
             <div class="row">
               <div class="col-6">
                 <input
                   type="search"
                   placeholder="Type in city"
-                  class="form-control shadow-sm"
+                  class="form-control shadow-sm input"
                   autofocus="on"
                   id="city-input"
                 />
               </div>
               <div class="col-3 p-0">
-                <input type="submit" value="Search" class="search-button btn btn-primary w-100"/>
+                <input type="submit" value="Search" class="search-button btn btn-primary w-100 btn-block" onclick="this.blur();"/>
               </div>
               <div class="col-3">
-                <button class="my-location-button btn btn-primary w-100">My location</button>
+                <button class="my-location-button btn btn-primary w-100 btn-block" onclick="this.blur();">My location</button>
               </div>
             </div>
-
           </form>
+
           <div class="main-window">
             <div class="row">
               <div class="col">
@@ -82,11 +76,14 @@
                  <div>Humidity: <span class="humidity"></span>%</div>
                 <div class="humidity"></div>
               </div>
+
             </div>
           </div>
 
           <div class="weather-forecast" id="forecast"></div>
+
       </div>
+
        <small class="github-link">
           <a
             href="https://github.com/dominikawalska/weather-application"
@@ -99,5 +96,6 @@
     </div>
 
     <script src="sources/app.js"></script>
+    </div>
   </body>
 </html>
