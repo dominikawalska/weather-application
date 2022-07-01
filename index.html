@@ -32,7 +32,7 @@
 
           <form id="city-form">
             <div class="row">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input
                   type="search"
                   placeholder="Type in city"
@@ -41,10 +41,10 @@
                   id="city-input"
                 />
               </div>
-              <div class="col-3 p-0">
+              <div class="col-sm-3">
                 <input type="submit" value="Search" class="search-button btn btn-primary w-100 btn-block" onclick="this.blur();"/>
               </div>
-              <div class="col-3">
+              <div class="col-sm-3">
                 <button class="my-location-button btn btn-primary w-100 btn-block" onclick="this.blur();">My location</button>
               </div>
             </div>
@@ -52,13 +52,13 @@
 
           <div class="main-window">
             <div class="row">
-              <div class="col">
+              <div class="col-sm">
                 <h1 id="main-city"></h1>
                 <h3 id="date"></h3>
                 <h4 id="description"></h4>
               </div>
 
-              <div class="col main-weather">
+              <span class="col-sm main-weather">
                 <img 
                 src=""
                 class="main-weather-icon"
@@ -66,9 +66,9 @@
                 alt=""></img>
                 <span class="main-weather-temperature"></span>
                 <span class="units">°C</span>
-              </div>
+              </span>
 
-              <div class="col wind-hum">
+              <div class="col-sm wind-hum">
                 <div>Wind: <span class="wind"></span>km/h</div>
                  <div>Humidity: <span class="humidity"></span>%</div>
                 <div class="humidity"></div>

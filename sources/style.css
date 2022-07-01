@@ -29,6 +29,7 @@ body {
 .input:defined {
   background-color: rgb(165, 189, 253, 0.3);
   border: none;
+  width: 100%;
 }
 
 .search-button {
@@ -119,5 +120,47 @@ body {
   color: #5a6275;
 }
 .my-location-button:hover {
-  background-color: rgb(90, 98, 117, 70%);
+  background-color: rgba(90, 98, 117, 70%);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .weather-app {
+    margin: 60px 20px;
+  }
+
+  .main-weather-temperature {
+    font-size: 50px;
+  }
+
+  .wind-hum {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .search-button {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  .my-location-button {
+    font-size: 18px;
+  }
+
+  .weather-forecast {
+    margin-top: 40px;
+  }
 }
